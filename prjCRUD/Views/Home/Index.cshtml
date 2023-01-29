@@ -32,10 +32,10 @@
             @item.fId
         </td>
         <td>
-            <img src="~/images/@item.fImage" width="32" />
+            @Html.DisplayFor(modelItem => item.fTitle)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.fImage)
+            <img src="~/images/@item.fImage" width="32" />
         </td>
         <td>
             @DateTime.Parse(item.fDate.ToString()).ToShortDateString()
